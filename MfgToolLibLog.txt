@@ -1,0 +1,1123 @@
+DLL version: 2.3.4
+Wed Dec 14 14:12:05 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+DLL version: 2.3.4
+Wed Dec 14 14:12:50 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+DLL version: 2.3.4
+Wed Dec 14 14:13:52 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f8e1c003b80
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7f8e1c003b80]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 84000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7f8e1c003b80] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: DeviceTypeDisk--_devices size: 0
+ModuleID[2] LevelID[10]: Create Device 0x7f8e1c004540
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 0 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0boot0 bs=1k seek=768 conv=fsync count=8
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0boot0 bs=512 seek=2
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 1 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mmc bootpart enable 1 1 /dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ hdparm -z /dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ gdisk -l /dev/mmcblk0 
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ ls -l /dev/mmc*
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo `gdisk -l /dev/mmcblk0 | grep -w boot_a | awk '{print $1}'` > /tmp/partIdx
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0p`cat /tmp/partIdx`
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo `gdisk -l /dev/mmcblk0 | grep -w boot_b | awk '{print $1}'` > /tmp/partIdx
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0p`cat /tmp/partIdx`
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mount -o remount,size=512M rootfs /
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo `gdisk -l /dev/mmcblk0 | grep -w system_a | awk '{print $1}'` > /tmp/partIdx
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ simg2img $FILE /dev/mmcblk0p`cat /tmp/partIdx`
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo `gdisk -l /dev/mmcblk0 | grep -w system_b | awk '{print $1}'` > /tmp/partIdx
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ simg2img $FILE /dev/mmcblk0p`cat /tmp/partIdx`
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo `gdisk -l /dev/mmcblk0 | grep -w userdata | awk '{print $1}'` > /tmp/partIdx
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ simg2img $FILE /dev/mmcblk0p`cat /tmp/partIdx`
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo `gdisk -l /dev/mmcblk0 | grep -w misc | awk '{print $1}'` > /tmp/partIdx
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0p`cat /tmp/partIdx` bs=1024 conv=fsync count=1024
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ sync
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is frf
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo Update Complete!
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f8e1c015210
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7f8e1c015210]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 84000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7f8e1c015210] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: DeviceTypeDisk--_devices size: 0
+ModuleID[2] LevelID[10]: Create Device 0x7f8e1c015ca0
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 0 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0boot0 bs=1k seek=768 conv=fsync count=8
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0boot0 bs=512 seek=2
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 1 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mmc bootpart enable 1 1 /dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ hdparm -z /dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ gdisk -l /dev/mmcblk0 
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ ls -l /dev/mmc*
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MSCDevice--Command Push(file) excute failed
+DLL version: 2.3.4
+Wed Dec 14 14:20:52 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7fd6a8003b80
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7fd6a8003b80]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 84000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7fd6a8003b80] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: DeviceTypeDisk--_devices size: 0
+ModuleID[2] LevelID[10]: Create Device 0x7fd6a8004540
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 0 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0boot0 bs=1k seek=768 conv=fsync count=8
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0boot0 bs=512 seek=2
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 1 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mmc bootpart enable 1 1 /dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ hdparm -z /dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ gdisk -l /dev/mmcblk0 
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ ls -l /dev/mmc*
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo `gdisk -l /dev/mmcblk0 | grep -w boot_a | awk '{print $1}'` > /tmp/partIdx
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0p`cat /tmp/partIdx`
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo `gdisk -l /dev/mmcblk0 | grep -w boot_b | awk '{print $1}'` > /tmp/partIdx
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0p`cat /tmp/partIdx`
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mount -o remount,size=512M rootfs /
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo `gdisk -l /dev/mmcblk0 | grep -w system_a | awk '{print $1}'` > /tmp/partIdx
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ simg2img $FILE /dev/mmcblk0p`cat /tmp/partIdx`
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo `gdisk -l /dev/mmcblk0 | grep -w system_b | awk '{print $1}'` > /tmp/partIdx
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ simg2img $FILE /dev/mmcblk0p`cat /tmp/partIdx`
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo `gdisk -l /dev/mmcblk0 | grep -w userdata | awk '{print $1}'` > /tmp/partIdx
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ simg2img $FILE /dev/mmcblk0p`cat /tmp/partIdx`
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo `gdisk -l /dev/mmcblk0 | grep -w misc | awk '{print $1}'` > /tmp/partIdx
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0p`cat /tmp/partIdx` bs=1024 conv=fsync count=1024
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ sync
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is frf
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo Update Complete!
+DLL version: 2.3.4
+Tue Dec 20 18:19:15 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f2d80003b80
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7f2d80003b80]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 84000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7f2d80003b80] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: DeviceTypeDisk--_devices size: 0
+ModuleID[2] LevelID[10]: Create Device 0x7f2d80004540
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 0 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0boot0 bs=1k seek=768 conv=fsync count=8
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0boot0 bs=512 seek=2
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 1 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mmc bootpart enable 1 1 /dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ sync
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo Update Complete!
+DLL version: 2.3.4
+Tue Dec 20 18:20:19 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+DLL version: 2.3.4
+Tue Dec 20 18:20:28 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+DLL version: 2.3.4
+Tue Dec 20 18:20:39 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7fcff4003b80
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7fcff4003b80]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 84000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7fcff4003b80] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: DeviceTypeDisk--_devices size: 0
+ModuleID[2] LevelID[10]: Create Device 0x7fcff4004540
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 0 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0boot0 bs=1k seek=768 conv=fsync count=8
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0boot0 bs=512 seek=2
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 1 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mmc bootpart enable 1 1 /dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ sync
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo Update Complete!
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7fcff4015210
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7fcff4015210]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 84000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7fcff4015210] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: DeviceTypeDisk--_devices size: 0
+ModuleID[2] LevelID[10]: Create Device 0x7fcff4015ca0
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 0 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0boot0 bs=1k seek=768 conv=fsync count=8
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0boot0 bs=512 seek=2
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 1 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7fcff4026970
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7fcff4026970]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 84000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7fcff4026970] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: DeviceTypeDisk--_devices size: 0
+ModuleID[2] LevelID[10]: Create Device 0x7fcff4027290
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 0 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0boot0 bs=1k seek=768 conv=fsync count=8
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0boot0 bs=512 seek=2
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 1 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mmc bootpart enable 1 1 /dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ sync
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo Update Complete!
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7fcff4038090
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7fcff4038090]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 84000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7fcff4038090] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+DLL version: 2.3.4
+Tue Dec 20 18:36:33 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f7664003b80
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7f7664003b80]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 84000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7f7664003b80] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: DeviceTypeDisk--_devices size: 0
+ModuleID[2] LevelID[10]: Create Device 0x7f7664004540
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 0 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0boot0 bs=1k seek=768 conv=fsync count=8
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0boot0 bs=512 seek=2
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 1 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mmc bootpart enable 1 1 /dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ sync
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo Update Complete!
+DLL version: 2.3.4
+Tue Dec 20 22:20:09 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f9404003b80
+
+ModuleID[2] LevelID[1]: failed to open no access
+
+ModuleID[2] LevelID[1]: could not open USB Device
+
+ModuleID[2] LevelID[10]: delete MxHidDevice[0x7f9404003b80]
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f9404003920
+
+ModuleID[2] LevelID[1]: failed to open no access
+
+ModuleID[2] LevelID[1]: could not open USB Device
+
+ModuleID[2] LevelID[10]: delete MxHidDevice[0x7f9404003920]
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f9404003920
+
+ModuleID[2] LevelID[1]: failed to open no access
+
+ModuleID[2] LevelID[1]: could not open USB Device
+
+ModuleID[2] LevelID[10]: delete MxHidDevice[0x7f9404003920]
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f9404003920
+
+ModuleID[2] LevelID[1]: failed to open no access
+
+ModuleID[2] LevelID[1]: could not open USB Device
+
+ModuleID[2] LevelID[10]: delete MxHidDevice[0x7f9404003920]
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f9404003920
+
+ModuleID[2] LevelID[1]: could not open USB Device
+
+ModuleID[2] LevelID[10]: delete MxHidDevice[0x7f9404003920]
+DLL version: 2.3.4
+Tue Dec 20 22:20:44 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f3644003b80
+
+ModuleID[2] LevelID[1]: failed to open no access
+
+ModuleID[2] LevelID[1]: could not open USB Device
+
+ModuleID[2] LevelID[10]: delete MxHidDevice[0x7f3644003b80]
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f3644003920
+
+ModuleID[2] LevelID[1]: failed to open no access
+
+ModuleID[2] LevelID[1]: could not open USB Device
+
+ModuleID[2] LevelID[10]: delete MxHidDevice[0x7f3644003920]
+DLL version: 2.3.4
+Tue Dec 20 22:21:12 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f3834003b80
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7f3834003b80]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 84000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7f3834003b80] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: DeviceTypeDisk--_devices size: 0
+ModuleID[2] LevelID[10]: Create Device 0x7f3834004540
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 0 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0boot0 bs=1k seek=768 conv=fsync count=8
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0boot0 bs=512 seek=2
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 1 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mmc bootpart enable 1 1 /dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ blkdiscard /dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ sync
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo Update Complete!
+DLL version: 2.3.4
+Wed Dec 21 00:31:48 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f6628003b80
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7f6628003b80]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 84000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7f6628003b80] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+DLL version: 2.3.4
+Wed Dec 21 00:33:39 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f0ae4003b80
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7f0ae4003b80]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 84000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7f0ae4003b80] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: DeviceTypeDisk--_devices size: 0
+ModuleID[2] LevelID[10]: Create Device 0x7f0ae4004540
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 0 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0boot0 bs=1k seek=768 conv=fsync count=8
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0boot0 bs=512 seek=2
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 1 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mmc bootpart enable 1 1 /dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ blkdiscard /dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ sync
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo Update Complete!
+DLL version: 2.3.4
+Wed Dec 21 00:45:54 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f5768003b80
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7f5768003b80]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 84000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7f5768003b80] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: DeviceTypeDisk--_devices size: 0
+ModuleID[2] LevelID[10]: Create Device 0x7f5768004540
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulpico_emmc.imx
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-picosom-hobbit-emmc.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 0 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk0boot0 bs=1k seek=768 conv=fsync count=8
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk0boot0 bs=512 seek=2
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo 1 > /sys/block/mmcblk0boot0/force_ro
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mmc bootpart enable 1 1 /dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ blkdiscard /dev/mmcblk0
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ sync
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ echo Update Complete!

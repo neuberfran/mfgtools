@@ -1,0 +1,660 @@
+DLL version: 2.3.4
+Wed Feb 17 22:06:16 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f949c003b80
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7f949c003b80]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulevk_sd.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-14x14-evk.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7f949c003b80] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulevk_sd.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: DeviceTypeDisk--_devices size: 0
+ModuleID[2] LevelID[10]: Create Device 0x7f949c004540
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulevk_sd.imx
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-14x14-evk.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ tar xf $FILE 
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ sh mksdcard-brillo.sh /dev/mmcblk1
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk1 bs=1k seek=384 conv=fsync count=129
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk1 bs=1k seek=1 conv=fsync
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ ls -l /dev/mmc* 
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MSCDevice--Command Push(file) excute failed
+DLL version: 2.3.4
+Wed Feb 17 22:48:31 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f0ea4003b80
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7f0ea4003b80]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulevk_sd.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-14x14-evk.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7f0ea4003b80] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulevk_sd.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: DeviceTypeDisk--_devices size: 0
+ModuleID[2] LevelID[10]: Create Device 0x7f0ea4004540
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulevk_sd.imx
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-14x14-evk.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk1 bs=1k seek=384 conv=fsync count=129
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk1 bs=1k seek=1 conv=fsync
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ ls -l /dev/mmc* 
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk1p1
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk1p7
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mkfs.ext4 /dev/mmcblk1p5
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mkfs.ext4 /dev/mmcblk1p8
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mkfs.ext4 /dev/mmcblk1p6
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mkfs.ext4 /dev/mmcblk1p4
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ mount -o remount,size=512M rootfs /
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MSCDevice--Command Push(file) excute failed
+DLL version: 2.3.4
+Wed Feb 17 22:55:13 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f0508003b80
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7f0508003b80]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulevk_sd.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-14x14-evk.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7f0508003b80] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulevk_sd.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: DeviceTypeDisk--_devices size: 0
+ModuleID[2] LevelID[10]: Create Device 0x7f0508004540
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulevk_sd.imx
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-14x14-evk.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ tar xf $FILE 
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ sh mksdcard-brillo.sh /dev/mmcblk1
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk1 bs=1k seek=384 count=129
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk1 bs=1k seek=1
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ ls -l /dev/mmc* 
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MSCDevice--Command Push(file) excute failed
+DLL version: 2.3.4
+Wed Feb 17 23:25:12 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+DLL version: 2.3.4
+Wed Feb 17 23:25:31 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7f61d0003b80
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7f61d0003b80]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulevk_sd.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-14x14-evk.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7f61d0003b80] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulevk_sd.imx
+ModuleID[2] LevelID[1]: Failed to initialize memory!
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MxHidDevice--Command Boot excute failed
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: DeviceTypeDisk--_devices size: 0
+ModuleID[2] LevelID[10]: Create Device 0x7f61d0004540
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulevk_sd.imx
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-14x14-evk.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ tar xf $FILE 
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ sh mksdcard-brillo.sh /dev/mmcblk1
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=/dev/zero of=/dev/mmcblk1 bs=1k seek=384 conv=fsync count=129
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ dd if=$FILE of=/dev/mmcblk1 bs=1k seek=1 conv=fsync
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is $ ls -l /dev/mmc* 
+ModuleID[2] LevelID[10]: ExecuteCommand--Push[WndIndex:0], Body is send
+ModuleID[2] LevelID[1]: PortMgrDlg(0)--MSCDevice--Command Push(file) excute failed
+DLL version: 2.3.4
+Wed Feb 17 23:39:52 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: CMyExceptionHandler thread is running
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[1]: new MxHidDeviceClass
+ModuleID[2] LevelID[10]: Add USB device
+
+ModuleID[2] LevelID[10]: Create Device 0x7fa314003b80
+
+ModuleID[2] LevelID[10]: new MxHidDevice[0x7fa314003b80]
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulevk_sd.imx
+ModuleID[2] LevelID[10]:  Trans Data address is 877ff400 
+
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage, address is 0x80800000
+ModuleID[2] LevelID[10]:  Trans Data address is 80800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 80c00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/fsl-image-mfgtool-initramfs-imx_mfgtools.cpio.gz.u-boot, address is 0x83800000
+ModuleID[2] LevelID[10]:  Trans Data address is 83800000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83a00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83c00000 
+
+ModuleID[2] LevelID[10]:  Trans Data address is 83e00000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Load[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/zImage-imx6ul-14x14-evk.dtb, address is 0x83000000
+ModuleID[2] LevelID[10]:  Trans Data address is 83000000 
+
+ModuleID[2] LevelID[10]: PortMgrDlg(0)--Command Load excute successfully, retry count: 0
+ModuleID[2] LevelID[10]: ExecuteCommand--Jump[WndIndex:0]
+ModuleID[2] LevelID[10]: *********MxHidDevice[0x7fa314003b80] Jump to Ramkernel successfully!**********
+ModuleID[2] LevelID[10]: ExecuteCommand--Boot[WndIndex:0], File is ./Profiles/Linux/OS Firmware/firmware/u-boot-imx6ulevk_sd.imx
+DLL version: 2.3.4
+Thu Feb 18 00:06:32 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[1]: Push command--file ./Profiles/Linux/OS Firmware/files/brillo/evk/u-boot.imx failed to open.errcode is 2
+ModuleID[2] LevelID[1]: Parse ucl script failed, error code: 4
+DLL version: 2.3.4
+Thu Feb 18 00:06:51 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[1]: Push command--file ./Profiles/Linux/OS Firmware/files/brillo/evk/u-boot.imx failed to open.errcode is 2
+ModuleID[2] LevelID[1]: Parse ucl script failed, error code: 4
+DLL version: 2.3.4
+Thu Feb 18 00:07:19 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[1]: Push command--file ./Profiles/Linux/OS Firmware/files/brillo/evk/u-boot.imx failed to open.errcode is 2
+ModuleID[2] LevelID[1]: Parse ucl script failed, error code: 4
+DLL version: 2.3.4
+Thu Feb 18 00:21:41 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[1]: Push command--file ./Profiles/Linux/OS Firmware/files/brillo/evk/u-boot.imx failed to open.errcode is 2
+ModuleID[2] LevelID[1]: Parse ucl script failed, error code: 4
+DLL version: 2.3.4
+Thu Feb 18 18:04:17 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[1]: Push command--file ./Profiles/Linux/OS Firmware/mksdcard-brillo.sh.tar failed to open.errcode is 2
+ModuleID[2] LevelID[1]: Parse ucl script failed, error code: 4
+DLL version: 2.3.4
+Thu Feb 18 18:06:57 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[1]: Push command--file ./Profiles/Linux/OS Firmware/mksdcard-brillo.sh.tar failed to open.errcode is 2
+ModuleID[2] LevelID[1]: Parse ucl script failed, error code: 4
+DLL version: 2.3.4
+Thu Mar 10 18:33:43 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[1]: Push command--file ./Profiles/Linux/OS Firmware/mksdcard-brillo.sh.tar failed to open.errcode is 2
+ModuleID[2] LevelID[1]: Parse ucl script failed, error code: 4
+DLL version: 2.3.4
+Thu Mar 10 18:36:48 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[1]: Push command--file ./Profiles/Linux/OS Firmware/mksdcard-brillo.sh.tar failed to open.errcode is 2
+ModuleID[2] LevelID[1]: Parse ucl script failed, error code: 4
+DLL version: 2.3.4
+Wed Aug 31 23:04:04 2016
+   Start new logging
+ModuleID[2] LevelID[10]: address from XML 0x12000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x80800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x12C00000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83800000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x18000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[10]: address from XML 0x83000000 
+
+ModuleID[2] LevelID[1]: Push command--file ./Profiles/Linux/OS Firmware/mksdcard-brillo.sh.tar failed to open.errcode is 2
+ModuleID[2] LevelID[1]: Parse ucl script failed, error code: 4

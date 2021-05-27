@@ -1,0 +1,315 @@
+<!--
+* Copyright (C) 2012, Freescale Semiconductor, Inc. All Rights Reserved.
+* The CFG element contains a list of recognized usb devices.
+*  DEV elements provide a name, class, vid and pid for each device.
+*
+* Each LIST element contains a list of update instructions.
+*  "Install" - Erase media and install firmware.
+*  "Update" - Update firmware only.
+*
+* Each CMD element contains one update instruction of attribute type.
+*  "pull" - Does UtpRead(body, file) transaction.
+*  "push" - Does UtpWrite(body, file) transaction.
+*  "drop" - Does UtpCommand(body) then waits for device to disconnect.
+*  "boot" - Finds configured device, forces it to "body" device and downloads "file".
+*  "find" - Waits for "timeout" seconds for the "body" device to connect.
+*  "show" - Parse and show device info in "file".  
+-->
+
+
+<UCL>
+  <CFG>
+    <STATE name="BootStrap" dev="MX6SL" vid="15A2" pid="0063"/>
+    <STATE name="BootStrap" dev="MX6D" vid="15A2" pid="0061"/>
+    <STATE name="BootStrap" dev="MX6Q" vid="15A2" pid="0054"/>
+    <STATE name="BootStrap" dev="MX6SX" vid="15A2" pid="0071"/>
+    <STATE name="BootStrap" dev="MX6UL" vid="15A2" pid="007D"/>
+    <STATE name="BootStrap" dev="MX7D" vid="15A2" pid="0076"/>
+    <STATE name="Updater"   dev="MSC" vid="066F" pid="37FF"/>
+  </CFG>
+
+<LIST name="SDCard-Brillo" desc="Choose SD Card as media">
+	<CMD state="BootStrap" type="boot" body="BootStrap" file ="firmware/u-boot-imx6q%plus%%board%_sd.imx" ifdev="MX6Q">Loading U-boot</CMD>
+	<CMD state="BootStrap" type="boot" body="BootStrap" file ="firmware/u-boot-imx6dl%board%_sd.imx" ifdev="MX6D">Loading U-boot</CMD>
+	<CMD state="BootStrap" type="boot" body="BootStrap" file ="firmware/u-boot-imx6slevk_sd.imx" ifdev="MX6SL">Loading U-boot</CMD>
+	<CMD state="BootStrap" type="boot" body="BootStrap" file ="firmware/u-boot-imx6sx%sxuboot%_sd.imx" ifdev="MX6SX">Loading U-boot</CMD>
+	<CMD state="BootStrap" type="boot" body="BootStrap" file ="firmware/u-boot-imx7d%7duboot%_sd.imx" ifdev="MX7D">Loading U-boot</CMD>
+	<CMD state="BootStrap" type="boot" body="BootStrap" file ="firmware/u-boot-imx6ul%6uluboot%_sd.imx" ifdev="MX6UL">Loading U-boot</CMD>
+
+	<CMD state="BootStrap" type="load" file="firmware/zImage" address="0x12000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6Q MX6D">Loading Kernel.</CMD>
+	<CMD state="BootStrap" type="load" file="firmware/zImage" address="0x80800000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6SL MX6SX MX7D MX6UL">Loading Kernel.</CMD>
+
+	<CMD state="BootStrap" type="load" file="firmware/%initramfs%" address="0x12C00000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6Q MX6D">Loading Initramfs.</CMD>
+	<CMD state="BootStrap" type="load" file="firmware/%initramfs%" address="0x83800000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6SL MX6SX MX7D MX6UL">Loading Initramfs.</CMD>
+
+	<CMD state="BootStrap" type="load" file="firmware/zImage-imx6q%plus%-%board%%ldo%.dtb" address="0x18000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6Q">Loading device tree.</CMD>
+	<CMD state="BootStrap" type="load" file="firmware/zImage-imx6dl-%board%%ldo%.dtb" address="0x18000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6D">Loading device tree.</CMD>
+	<CMD state="BootStrap" type="load" file="firmware/zImage-imx6sl-evk%ldo%.dtb" address="0x83000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6SL">Loading device tree.</CMD>
+	<CMD state="BootStrap" type="load" file="firmware/zImage-imx6sx-%sxdtb%.dtb" address="0x83000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6SX">Loading device tree.</CMD>
+	<CMD state="BootStrap" type="load" file="firmware/zImage-imx7d-%7ddtb%.dtb" address="0x83000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX7D">Loading device tree.</CMD>
+	<CMD state="BootStrap" type="load" file="firmware/zImage-imx6ul-%6uldtb%.dtb" address="0x83000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6UL">Loading device tree.</CMD>
+
+
+	<CMD state="BootStrap" type="jump" > Jumping to OS image. </CMD>
+
+	<!-- create partition -->
+	<CMD state="Updater" type="push" body="send" file="mksdcard-brillo%data_type%.sh.tar">Sending partition shell</CMD>
+	<CMD state="Updater" type="push" body="$ tar xf $FILE "> Partitioning...</CMD>
+	<CMD state="Updater" type="push" body="$ sh mksdcard-brillo%data_type%.sh /dev/mmcblk%mmc%"> Partitioning...</CMD>
+
+	<!-- burn uboot -->
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/u-boot.imx" ifdev="MX7D MX6UL">Sending u-boot.imx</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=/dev/zero of=/dev/mmcblk%mmc% bs=1k seek=768 conv=fsync count=8">clear u-boot arg</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk%mmc% bs=1k seek=1 conv=fsync">write u-boot.imx to sd card</CMD>
+
+	<CMD state="Updater" type="push" body="$ ls -l /dev/mmc* ">Formatting sd partition</CMD>
+
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/boot.img" ifdev="MX7D MX6UL">Sending and writting boot.img</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk%mmc%p1">write boot.img to boot_a</CMD>
+
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/boot.img" ifdev="MX7D MX6UL">Sending and writting boot.img</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk%mmc%p7">write boot.img to boot_b</CMD>
+
+	<CMD state="Updater" type="push" body="$ mkfs.ext4 /dev/mmcblk%mmc%p5">Formatting system_a partition</CMD>
+	<CMD state="Updater" type="push" body="$ mkfs.ext4 /dev/mmcblk%mmc%p8">Formatting system_b partition</CMD>
+	<CMD state="Updater" type="push" body="$ mkfs.ext4 /dev/mmcblk%mmc%p4">Formatting data partition</CMD>
+
+    <CMD state="Updater" type="push" body="$ mount -o remount,size=512M rootfs /">change size of tmpfs</CMD>
+    <CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/system.img" ifdev="MX7D MX6UL">Sending system.img</CMD>
+    <CMD state="Updater" type="push" body="$ simg2img $FILE /dev/mmcblk%mmc%p5">writting sparse system.img to system_a</CMD>
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/system.img" ifdev="MX7D MX6UL">Sending system.img</CMD>
+    <CMD state="Updater" type="push" body="$ simg2img $FILE /dev/mmcblk%mmc%p8">writting sparse system.img to system_b</CMD>
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/misc.img" ifdev="MX7D MX6UL">Sending misc.img</CMD>
+    <CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk%mmc%p9">writting misc.img</CMD>
+
+	<CMD state="Updater" type="push" body="$ sync">Sync file system</CMD>
+	<CMD state="Updater" type="push" body="frf">Finishing rootfs write</CMD>
+
+	<CMD state="Updater" type="push" body="$ echo Update Complete!">Done</CMD>
+</LIST>
+<LIST name="eMMC-Brillo" desc="Choose eMMC as media">
+	<CMD state="BootStrap" type="boot" body="BootStrap" file ="firmware/u-boot-imx6ul%6uluboot%_emmc.imx" ifdev="MX6UL">Loading U-boot</CMD>
+	<CMD state="BootStrap" type="boot" body="BootStrap" file ="firmware/u-boot-imx7d%7duboot%_sd.imx" ifdev="MX7D">Loading U-boot</CMD>
+	
+	<CMD state="BootStrap" type="load" file="firmware/zImage" address="0x12000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6Q MX6D">Loading Kernel.</CMD>
+	<CMD state="BootStrap" type="load" file="firmware/zImage" address="0x80800000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6SL MX6SX MX7D MX6UL">Loading Kernel.</CMD>
+
+	<CMD state="BootStrap" type="load" file="firmware/%initramfs%" address="0x12C00000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6Q MX6D">Loading Initramfs.</CMD>
+	<CMD state="BootStrap" type="load" file="firmware/%initramfs%" address="0x83800000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6SL MX6SX MX7D MX6UL">Loading Initramfs.</CMD>
+
+	<CMD state="BootStrap" type="load" file="firmware/zImage-imx6ul-%6uldtb%-emmc.dtb" address="0x83000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6UL">Loading device tree.</CMD>
+	<CMD state="BootStrap" type="load" file="firmware/zImage-imx7d-%7ddtb%.dtb" address="0x83000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX7D">Loading device tree.</CMD>
+		
+	<CMD state="BootStrap" type="jump" > Jumping to OS image. </CMD>
+
+	<!-- burn uboot -->
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/u-boot.imx" ifdev="MX7D MX6UL">Sending u-boot.imx</CMD>
+	<CMD state="Updater" type="push" body="$ echo 0 > /sys/block/mmcblk%mmc%boot0/force_ro">access boot partition 1</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=/dev/zero of=/dev/mmcblk%mmc%boot0 bs=1k seek=768 conv=fsync count=8">clear u-boot arg</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk%mmc%boot0 bs=512 seek=2">write U-Boot to sd card</CMD>
+	<CMD state="Updater" type="push" body="$ echo 1 > /sys/block/mmcblk%mmc%boot0/force_ro"> re-enable read-only access </CMD>
+	<CMD state="Updater" type="push" body="$ mmc bootpart enable 1 1 /dev/mmcblk%mmc%">enable boot partion 1 to boot</CMD>
+
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/partition-table.img" ifdev="MX7D MX6UL">Sending and writting partition-table.img</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk%mmc%">write gpt table to mmc</CMD>
+	<CMD state="Updater" type="push" body="$ hdparm -z /dev/mmcblk%mmc%">Dectecting emmc partition</CMD>
+	<CMD state="Updater" type="push" body="$ gdisk -l /dev/mmcblk%mmc% ">Formatting emmc partition</CMD>
+	<CMD state="Updater" type="push" body="$ ls -l /dev/mmc*">Show emmc partition</CMD>
+
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/boot.img" ifdev="MX7D MX6UL">Sending and writting boot.img</CMD>	
+	<CMD state="Updater" type="push" body="$ echo `gdisk -l /dev/mmcblk%mmc% | grep -w boot_a | awk '{print $1}'` > /tmp/partIdx">find boot_a</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk%mmc%p`cat /tmp/partIdx`">write boot.img to boot_a</CMD>	
+	<CMD state="Updater" type="push" body="$ echo `gdisk -l /dev/mmcblk%mmc% | grep -w boot_b | awk '{print $1}'` > /tmp/partIdx">find boot_b</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk%mmc%p`cat /tmp/partIdx`">write boot.img to boot_b</CMD>
+
+	<CMD state="Updater" type="push" body="$ mount -o remount,size=512M rootfs /">change size of tmpfs</CMD>
+
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/system.img" ifdev="MX7D MX6UL">Sending system.img</CMD>
+	<CMD state="Updater" type="push" body="$ echo `gdisk -l /dev/mmcblk%mmc% | grep -w system_a | awk '{print $1}'` > /tmp/partIdx">find system_a</CMD>
+	<CMD state="Updater" type="push" body="$ simg2img $FILE /dev/mmcblk%mmc%p`cat /tmp/partIdx`">writting sparse system.img to system_a</CMD>
+	<CMD state="Updater" type="push" body="$ echo `gdisk -l /dev/mmcblk%mmc% | grep -w system_b | awk '{print $1}'` > /tmp/partIdx">find system_b</CMD>
+	<CMD state="Updater" type="push" body="$ simg2img $FILE /dev/mmcblk%mmc%p`cat /tmp/partIdx`">writting sparse system.img to system_b</CMD>
+
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/userdata.img" ifdev="MX7D MX6UL">Sending userdata.img</CMD>
+	<CMD state="Updater" type="push" body="$ echo `gdisk -l /dev/mmcblk%mmc% | grep -w userdata | awk '{print $1}'` > /tmp/partIdx">find userdata</CMD>
+	<CMD state="Updater" type="push" body="$ simg2img $FILE /dev/mmcblk%mmc%p`cat /tmp/partIdx`">writting sparse userdata.img to data</CMD>
+
+	<CMD state="Updater" type="push" body="$ echo `gdisk -l /dev/mmcblk%mmc% | grep -w misc | awk '{print $1}'` > /tmp/partIdx">find misc</CMD>		
+	<CMD state="Updater" type="push" body="$ dd if=/dev/zero of=/dev/mmcblk%mmc%p`cat /tmp/partIdx` bs=1024 conv=fsync count=1024">clear misc</CMD>
+	<CMD state="Updater" type="push" body="$ sync">Sync file system</CMD>
+	<CMD state="Updater" type="push" body="frf">Finishing rootfs write</CMD>
+
+	<CMD state="Updater" type="push" body="$ echo Update Complete!">Done</CMD>
+</LIST>
+<LIST name="eMMC-Brillo-uboot" desc="Choose eMMC as media">
+	<CMD state="BootStrap" type="boot" body="BootStrap" file ="firmware/u-boot-imx6ul%6uluboot%_emmc.imx" ifdev="MX6UL">Loading U-boot</CMD>
+	<CMD state="BootStrap" type="boot" body="BootStrap" file ="firmware/u-boot-imx7d%7duboot%_sd.imx" ifdev="MX7D">Loading U-boot</CMD>
+	
+	<CMD state="BootStrap" type="load" file="firmware/zImage" address="0x12000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6Q MX6D">Loading Kernel.</CMD>
+	<CMD state="BootStrap" type="load" file="firmware/zImage" address="0x80800000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6SL MX6SX MX7D MX6UL">Loading Kernel.</CMD>
+
+	<CMD state="BootStrap" type="load" file="firmware/%initramfs%" address="0x12C00000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6Q MX6D">Loading Initramfs.</CMD>
+	<CMD state="BootStrap" type="load" file="firmware/%initramfs%" address="0x83800000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6SL MX6SX MX7D MX6UL">Loading Initramfs.</CMD>
+
+	<CMD state="BootStrap" type="load" file="firmware/zImage-imx6ul-%6uldtb%-emmc.dtb" address="0x83000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6UL">Loading device tree.</CMD>
+	<CMD state="BootStrap" type="load" file="firmware/zImage-imx7d-%7ddtb%.dtb" address="0x83000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX7D">Loading device tree.</CMD>
+		
+	<CMD state="BootStrap" type="jump" > Jumping to OS image. </CMD>
+
+	<!-- burn uboot -->
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/u-boot.imx" ifdev="MX7D MX6UL">Sending u-boot.imx</CMD>
+	<CMD state="Updater" type="push" body="$ echo 0 > /sys/block/mmcblk%mmc%boot0/force_ro">access boot partition 1</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=/dev/zero of=/dev/mmcblk%mmc%boot0 bs=1k seek=768 conv=fsync count=8">clear u-boot arg</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk%mmc%boot0 bs=512 seek=2">write U-Boot to sd card</CMD>
+	<CMD state="Updater" type="push" body="$ echo 1 > /sys/block/mmcblk%mmc%boot0/force_ro"> re-enable read-only access </CMD>
+	<CMD state="Updater" type="push" body="$ mmc bootpart enable 1 1 /dev/mmcblk%mmc%">enable boot partion 1 to boot</CMD>
+	
+	<!-- clear emmc -->
+	<CMD state="Updater" type="push" body="$ blkdiscard /dev/mmcblk%mmc%">clear emmc</CMD>
+	
+	<CMD state="Updater" type="push" body="$ sync">Sync file system</CMD>
+	<CMD state="Updater" type="push" body="$ echo Update Complete!">Done</CMD>
+</LIST>
+<LIST name="eMMC-Brillo-6dl" desc="Choose eMMC as media">
+	<CMD state="BootStrap" type="boot" body="BootStrap" file ="firmware/u-boot-imx6dl%6dluboot%_emmc.imx" ifdev="MX6D">Loading U-boot</CMD>
+	
+	<CMD state="BootStrap" type="load" file="firmware/zImage" address="0x12000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6Q MX6D">Loading Kernel.</CMD>
+
+	<CMD state="BootStrap" type="load" file="firmware/%initramfs%" address="0x12C00000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6Q MX6D">Loading Initramfs.</CMD>
+
+	<CMD state="BootStrap" type="load" file="firmware/zImage-imx6dl-%6dldtb%.dtb" address="0x18000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6D">Loading device tree.</CMD>
+		
+	<CMD state="BootStrap" type="jump" > Jumping to OS image. </CMD>
+
+	<!-- burn uboot -->
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/u-boot.imx" ifdev="MX6D">Sending u-boot.imx</CMD>
+	<CMD state="Updater" type="push" body="$ echo 0 > /sys/block/mmcblk%mmc%boot0/force_ro">access boot partition 1</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=/dev/zero of=/dev/mmcblk%mmc%boot0 bs=1k seek=768 conv=fsync count=8">clear u-boot arg</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk%mmc%boot0 bs=512 seek=2">write U-Boot to sd card</CMD>
+	<CMD state="Updater" type="push" body="$ echo 1 > /sys/block/mmcblk%mmc%boot0/force_ro"> re-enable read-only access </CMD>
+	<CMD state="Updater" type="push" body="$ mmc bootpart enable 1 1 /dev/mmcblk%mmc%">enable boot partion 1 to boot</CMD>
+
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/partition-table.img" ifdev="MX6D">Sending and writting partition-table.img</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk%mmc%">write gpt table to mmc</CMD>
+	<CMD state="Updater" type="push" body="$ hdparm -z /dev/mmcblk%mmc%">Dectecting emmc partition</CMD>
+	<CMD state="Updater" type="push" body="$ gdisk -l /dev/mmcblk%mmc% ">Formatting emmc partition</CMD>
+	<CMD state="Updater" type="push" body="$ ls -l /dev/mmc*">Show emmc partition</CMD>
+
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/boot.img" ifdev="MX6D">Sending and writting boot.img</CMD>	
+	<CMD state="Updater" type="push" body="$ echo `gdisk -l /dev/mmcblk%mmc% | grep -w boot_a | awk '{print $1}'` > /tmp/partIdx">find boot_a</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk%mmc%p`cat /tmp/partIdx`">write boot.img to boot_a</CMD>	
+	<CMD state="Updater" type="push" body="$ echo `gdisk -l /dev/mmcblk%mmc% | grep -w boot_b | awk '{print $1}'` > /tmp/partIdx">find boot_b</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk%mmc%p`cat /tmp/partIdx`">write boot.img to boot_b</CMD>
+
+	<CMD state="Updater" type="push" body="$ mount -o remount,size=512M rootfs /">change size of tmpfs</CMD>
+
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/system.img" ifdev="MX6D">Sending system.img</CMD>
+	<CMD state="Updater" type="push" body="$ echo `gdisk -l /dev/mmcblk%mmc% | grep -w system_a | awk '{print $1}'` > /tmp/partIdx">find system_a</CMD>
+	<CMD state="Updater" type="push" body="$ simg2img $FILE /dev/mmcblk%mmc%p`cat /tmp/partIdx`">writting sparse system.img to system_a</CMD>
+	<CMD state="Updater" type="push" body="$ echo `gdisk -l /dev/mmcblk%mmc% | grep -w system_b | awk '{print $1}'` > /tmp/partIdx">find system_b</CMD>
+	<CMD state="Updater" type="push" body="$ simg2img $FILE /dev/mmcblk%mmc%p`cat /tmp/partIdx`">writting sparse system.img to system_b</CMD>
+
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/userdata.img" ifdev="MX6D">Sending userdata.img</CMD>
+	<CMD state="Updater" type="push" body="$ echo `gdisk -l /dev/mmcblk%mmc% | grep -w userdata | awk '{print $1}'` > /tmp/partIdx">find userdata</CMD>
+	<CMD state="Updater" type="push" body="$ simg2img $FILE /dev/mmcblk%mmc%p`cat /tmp/partIdx`">writting sparse userdata.img to data</CMD>
+
+	<CMD state="Updater" type="push" body="$ echo `gdisk -l /dev/mmcblk%mmc% | grep -w misc | awk '{print $1}'` > /tmp/partIdx">find misc</CMD>		
+	<CMD state="Updater" type="push" body="$ dd if=/dev/zero of=/dev/mmcblk%mmc%p`cat /tmp/partIdx` bs=1024 conv=fsync count=1024">clear misc</CMD>
+	<CMD state="Updater" type="push" body="$ sync">Sync file system</CMD>
+	<CMD state="Updater" type="push" body="frf">Finishing rootfs write</CMD>
+
+	<CMD state="Updater" type="push" body="$ echo Update Complete!">Done</CMD>
+</LIST>
+<LIST name="eMMC-Brillo-uboot-6dl" desc="Choose eMMC as media">	
+	<CMD state="BootStrap" type="boot" body="BootStrap" file ="firmware/u-boot-imx6dl%6dluboot%_emmc.imx" ifdev="MX6D">Loading U-boot</CMD>
+	
+	<CMD state="BootStrap" type="load" file="firmware/zImage" address="0x12000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6Q MX6D">Loading Kernel.</CMD>
+
+	<CMD state="BootStrap" type="load" file="firmware/%initramfs%" address="0x12C00000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6Q MX6D">Loading Initramfs.</CMD>
+
+	<CMD state="BootStrap" type="load" file="firmware/zImage-imx6dl-%6dldtb%.dtb" address="0x18000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6D">Loading device tree.</CMD>
+		
+	<CMD state="BootStrap" type="jump" > Jumping to OS image. </CMD>
+
+	<!-- burn uboot -->
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/u-boot.imx" ifdev="MX6D">Sending u-boot.imx</CMD>
+	<CMD state="Updater" type="push" body="$ echo 0 > /sys/block/mmcblk%mmc%boot0/force_ro">access boot partition 1</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=/dev/zero of=/dev/mmcblk%mmc%boot0 bs=1k seek=768 conv=fsync count=8">clear u-boot arg</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk%mmc%boot0 bs=512 seek=2">write U-Boot to sd card</CMD>
+	<CMD state="Updater" type="push" body="$ echo 1 > /sys/block/mmcblk%mmc%boot0/force_ro"> re-enable read-only access </CMD>
+	<CMD state="Updater" type="push" body="$ mmc bootpart enable 1 1 /dev/mmcblk%mmc%">enable boot partion 1 to boot</CMD>
+	
+	<!-- clear emmc -->
+	<CMD state="Updater" type="push" body="$ blkdiscard /dev/mmcblk%mmc%">clear emmc</CMD>
+		
+	<CMD state="Updater" type="push" body="$ sync">Sync file system</CMD>	
+	<CMD state="Updater" type="push" body="$ echo Update Complete!">Done</CMD>	
+</LIST>
+<LIST name="eMMC-Brillo-uboot-fuse" desc="Choose eMMC as media">
+	<CMD state="BootStrap" type="boot" body="BootStrap" file ="firmware/u-boot-imx6ul%6uluboot%_emmc.imx" ifdev="MX6UL">Loading U-boot</CMD>
+	<CMD state="BootStrap" type="boot" body="BootStrap" file ="firmware/u-boot-imx7d%7duboot%_sd.imx" ifdev="MX7D">Loading U-boot</CMD>
+	
+	<CMD state="BootStrap" type="load" file="firmware/zImage" address="0x12000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6Q MX6D">Loading Kernel.</CMD>
+	<CMD state="BootStrap" type="load" file="firmware/zImage" address="0x80800000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6SL MX6SX MX7D MX6UL">Loading Kernel.</CMD>
+
+	<CMD state="BootStrap" type="load" file="firmware/%initramfs%" address="0x12C00000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6Q MX6D">Loading Initramfs.</CMD>
+	<CMD state="BootStrap" type="load" file="firmware/%initramfs%" address="0x83800000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6SL MX6SX MX7D MX6UL">Loading Initramfs.</CMD>
+
+	<CMD state="BootStrap" type="load" file="firmware/zImage-imx6ul-%6uldtb%-emmc.dtb" address="0x83000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX6UL">Loading device tree.</CMD>
+	<CMD state="BootStrap" type="load" file="firmware/zImage-imx7d-%7ddtb%.dtb" address="0x83000000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" ifdev="MX7D">Loading device tree.</CMD>
+		
+	<CMD state="BootStrap" type="jump" > Jumping to OS image. </CMD>
+
+	<!-- burn uboot -->
+	<CMD state="Updater" type="push" body="send" file="files/brillo/%folder%/u-boot.imx" ifdev="MX7D MX6UL">Sending u-boot.imx</CMD>
+	<CMD state="Updater" type="push" body="$ echo 0 > /sys/block/mmcblk%mmc%boot0/force_ro">access boot partition 1</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=/dev/zero of=/dev/mmcblk%mmc%boot0 bs=1k seek=768 conv=fsync count=8">clear u-boot arg</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk%mmc%boot0 bs=512 seek=2">write U-Boot to sd card</CMD>
+	<CMD state="Updater" type="push" body="$ echo 1 > /sys/block/mmcblk%mmc%boot0/force_ro"> re-enable read-only access </CMD>
+	<CMD state="Updater" type="push" body="$ mmc bootpart enable 1 1 /dev/mmcblk%mmc%">enable boot partion 1 to boot</CMD>
+	
+	<!-- clear emmc -->
+	<CMD state="Updater" type="push" body="$ blkdiscard /dev/mmcblk%mmc%">clear emmc</CMD>
+	
+	<CMD state="Updater" type="push" body="$ ls /sys/fsl_otp ">Showing HW_OCOTP fuse bank</CMD>
+    <CMD state="Updater" type="push" body="$ echo 0x10002810 > /sys/fsl_otp/HW_OCOTP_BOOT_CFG0">write 0x11204154 to /sys/fsl_otp/HW_OCOTP_BOOT_CFG0 fuse bank</CMD>
+    <CMD state="Updater" type="push" body="$ cat /sys/fsl_otp/HW_OCOTP_BOOT_CFG0 ">Read value from HW_OCOTP_CFG1 fuse bank</CMD>
+
+	<CMD state="Updater" type="push" body="$ sync">Sync file system</CMD>
+	<CMD state="Updater" type="push" body="$ echo Update Complete!">Done</CMD>
+</LIST>
+</UCL>

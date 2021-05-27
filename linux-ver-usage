@@ -1,0 +1,2 @@
+- linux-runvbs.sh <vbs file> to kick off mfgtool for specific platform,
+- or launch linux-cvbs.sh to covert all vbs to bash scripts.
